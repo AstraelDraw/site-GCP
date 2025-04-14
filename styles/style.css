@@ -1,0 +1,188 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.banner {
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid goldenrod; /* Ce bloc fait en sorte de régler la taille du header et le fixe sur le haut du site Internet pour qu'il reste lors du scroll*/
+    background-color: rgb(18, 40, 72);
+    position: fixed;
+    top:0;
+}
+
+.banner > h1 {
+    display: flex;
+    font-size: 30px;
+    font-family:cursive;
+    font-weight: bolder; /* Ce bloc définit l'esthétique du titre*/
+    color: goldenrod;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; /* Organisation des éléments du menu avec flexbox*/
+    padding: 5px 100px;
+    background-color: rgb(10, 26, 54);
+    border-top: 1px solid goldenrod;
+}
+
+nav p {
+    background-color:rgb(255, 220, 122);
+    font-family: 'Times New Roman', Times, serif; /*Définition des boutons du nav*/
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* BODY / MAIN*/
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif; /*Définition et organisation générale de tous les éléments + fond avec une image*/
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-image: url(../images/fond.jpeg);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+main{
+    width: 1080px;
+    display: flex; /*Organisation des elmts en colonne et définition d'un fond avec une opacité pour l'esthétique, une marge supérieure pour laisser la place au header*/
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 130px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+/*TEXTES*/
+
+h2{
+    font-size: 32px;
+    font-style: italic; /*Utilisation d'une font différente*/
+    font-family:cursive;
+    color: rgb(18, 40, 72);
+    display: flex;
+    text-decoration-line: underline;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(18, 40, 72);
+    padding: 30px;
+}
+
+section p{
+    font-size: 20px;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px solid rgb(18, 40, 72);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*COUVERTURES DES LIVRES*/
+/*Je me suis inspirée du projet netflix pour créer ces conteneurs, comme les cards avec les films*/
+
+.groupelivres{
+    display: flex; 
+    justify-content:center; 
+    gap: 20px; 
+    flex-wrap: wrap; /*C'est pour que le groupe soit maintenu dans le main sans dépasser*/
+    margin-top: 20px;
+}
+
+.livres{
+    background-color:rgb(18, 40, 72); /*L'esthétique des livres*/
+    width: 200px;
+    border-radius: 10px;
+}
+
+.livres p {
+    font-size: 20px;
+    display: flex;
+    color: goldenrod;
+    justify-content: center;
+    margin-top: -20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.livres h4{
+    display: flex;
+    color: goldenrod;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.livres img{
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*LISTE DES 4èME DE COUVERTURE*/
+
+ul{
+    list-style-type: none; /*Faire disparaître les puces*/
+}
+
+section li{
+    font-size: 20px;
+    max-width: 1000px;
+    border: 3px solid rgb(18, 40, 72);
+    margin: 50px auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.liste h4{
+    text-decoration-line: underline;
+    text-decoration-color: goldenrod;
+    color: rgb(10, 26, 54);
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:  rgb(10, 26, 54);
+    border-top: 2px solid goldenrod;
+    color: goldenrod;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+footer img{
+    background-color: rgb(255, 220, 122); /*Image qui sert d'ancre*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 0px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}

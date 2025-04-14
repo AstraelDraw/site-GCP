@@ -1,0 +1,166 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.banner {
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid goldenrod; /* Ce bloc fait en sorte de régler la taille du header et le fixe sur le haut du site Internet pour qu'il reste lors du scroll*/
+    background-color: rgb(18, 40, 72);
+    position: fixed;
+    top:0;
+}
+
+.banner > h1 {
+    display: flex;
+    font-size: 30px;
+    font-family:cursive;
+    font-weight: bolder; /* Ce bloc définit l'esthétique du titre*/
+    color: goldenrod;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; /* Organisation des éléments du menu avec flexbox*/
+    padding: 5px 100px;
+    background-color: rgb(10, 26, 54);
+    border-top: 1px solid goldenrod;
+}
+
+nav p {
+    background-color:rgb(255, 220, 122);
+    font-family: 'Times New Roman', Times, serif; /*Définition des boutons du nav*/
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* BODY / MAIN*/
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif; /*Définition et organisation générale de tous les éléments + fond avec une image*/
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-image: url(../images/fond.jpeg);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+main{
+    width: 1080px;
+    padding: 20px;
+    border-radius: 50px; /*Organisation des elmts en colonne et définition d'un fond avec une opacité pour l'esthétique, une marge supérieure pour laisser la place au header*/
+    margin-top: 130px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+/*TEXTES*/
+
+h2{
+    font-size: 32px;
+    font-style: italic;
+    font-family:cursive;
+    color: rgb(18, 40, 72);
+    display: flex;
+    text-decoration-line: underline;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: cursive;
+    color: rgb(18, 40, 72);
+    padding: 30px;
+}
+
+section p{
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 20px;
+    border: 2px solid rgb(18, 40, 72);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*CADRES DE PERSONNAGES*/
+
+.groupepersonnages{
+    display: flex; 
+    justify-content:center; 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.Personnage{
+    background-color:rgb(18, 40, 72);
+    width: 200px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.Personnage h4{
+    display: flex;
+    color: goldenrod;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.Personnage img{
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Personnage:nth-child(2n):hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /*Sur chaque image impaire (1ère image = 0ème) On ajoute une ombre au survol de la souris grâce à hover*/
+    
+}
+
+.Personnage:nth-child(2n+1):hover{
+    background-color: beige; /*De même ici mais avec un autre effet sur les images paire*/
+    transform: scale(1.1);
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:  rgb(10, 26, 54);
+    border-top: 2px solid goldenrod;
+    color: goldenrod;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+footer img{
+    background-color: rgb(255, 220, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 0px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}

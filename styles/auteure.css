@@ -1,0 +1,159 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.banner {
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid goldenrod; /* Ce bloc fait en sorte de régler la taille du header et le fixe sur le haut du site Internet pour qu'il reste lors du scroll*/
+    background-color: rgb(18, 40, 72);
+    position: fixed;
+    top:0;
+}
+
+.banner > h1 {
+    display: flex;
+    font-size: 30px;
+    font-family:cursive;
+    font-weight: bolder; /* Ce bloc définit l'esthétique du titre*/
+    color: goldenrod;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; /* Organisation des éléments du menu avec flexbox*/
+    padding: 5px 100px;
+    background-color: rgb(10, 26, 54);
+    border-top: 1px solid goldenrod;
+}
+
+nav p {
+    background-color:rgb(255, 220, 122);
+    font-family: 'Times New Roman', Times, serif; /*Définition des boutons du nav*/
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* BODY / MAIN*/
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif; /*Définition et organisation générale de tous les éléments + fond avec une image*/
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    background-image: url(../images/fond.jpeg);
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+main{
+    width: 90%;
+    padding: 20px;
+    border-radius: 50px; /*Organisation des elmts en colonne et définition d'un fond avec une opacité pour l'esthétique, une marge supérieure pour laisser la place au header*/
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+/*TEXTES*/
+
+h2{
+    font-size: 32px;
+    font-style: italic;
+    font-family:cursive;
+    color: rgb(18, 40, 72);
+    display: flex;
+    text-decoration-line: underline;
+    justify-content: center;
+}
+
+h3{
+    font-size: 22px;
+    color: rgb(18, 40, 72);
+}
+
+.texte::first-letter{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+/*GESTION DU CADRE DE L'AUTEURE*/
+
+.auteur-container {
+    gap: 50px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(29, 72, 97);
+    border-radius: 20px;
+}
+
+.auteure {
+    border-radius: 20px;
+}
+
+.auteur-container p {
+    flex: 1;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+div div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section{
+    display: flex;
+    gap: 10px;
+}
+
+/*ASIDE*/
+
+.côté{
+    padding-right: 30px;
+    width: 1000px;
+    margin-left: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color:  rgb(10, 26, 54);
+    border-top: 2px solid goldenrod;
+    color: goldenrod;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+footer img{
+    background-color: rgb(255, 220, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    padding: 10px 0px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
